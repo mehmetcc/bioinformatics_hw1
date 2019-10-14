@@ -115,7 +115,6 @@ int kmp(char *input, char *pattern)
 
 void preprocess(char *pattern, int *lps, int M)
 {
-
     int suffix_length = 0;
     int i = 1;
     lps[0] = 0;
