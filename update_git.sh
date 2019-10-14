@@ -1,3 +1,5 @@
+#!/bin/bash
+
 git add .
 if [ "$1" != "" ]; then
     git commit -m "minor changes"
