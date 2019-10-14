@@ -72,7 +72,6 @@ int naive_search(char *input, char *pattern)
     return -1;
 }
 
-
 // kmp search implementation
 int kmp(char *input, char *pattern)
 {

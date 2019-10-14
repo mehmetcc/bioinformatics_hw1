@@ -1,7 +1,7 @@
 #!/bin/bash
 
 git add .
-if [ "$1" != "" ]; then
+if [ "$1" == "" ]; then
     git commit -m "minor changes"
 else
     git commit -m "$1"
