@@ -5,7 +5,7 @@
 
 /**
  * TODOs
- * Add comparison metrics
+ * Add comparison metrics (how much comparison will be made to find the pattern)
  * Define time metrics with microseconds
 **/
 
@@ -32,7 +32,7 @@ int main()
     gettimeofday(&end, NULL);
     // print results for Naive algorithm
     printf("Running Naive algorithm\n");
-    printf("Found at index %d\n", found);
+    printf("Found at index %d\n", found + 1);
     printf("Start time: %d\nEnd time: %d\n", start.tv_usec, end.tv_usec);
     printf("Total time elapsed: %d microseconds\n", end.tv_usec - start.tv_usec);
 
@@ -42,7 +42,7 @@ int main()
     gettimeofday(&end, NULL);
     // print results for KMP algorithm
     printf("Running KMP algorithm\n");
-    printf("Found at index %d\n", found);
+    printf("Found at index %d\n", found + 1);
     printf("Start time: %d\nEnd time: %d\n", start.tv_usec, end.tv_usec);
     printf("Total time elapsed: %d microseconds\n", end.tv_usec - start.tv_usec);
 }
