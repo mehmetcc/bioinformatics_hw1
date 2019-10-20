@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "BMHSRCH.C": "cpp",
+        "BMHISRCH.C": "cpp",
+        "random": "c"
+    }
+}
