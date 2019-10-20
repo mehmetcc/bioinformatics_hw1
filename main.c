@@ -5,7 +5,6 @@
 #include <stdlib.h>
 #include <memory.h>
 
-
 /**
  * TODOs
  * Add command line interface for file i/o
@@ -100,16 +99,40 @@ int main(int argc, char *argv[])
     gettimeofday(&end, NULL);
     // print results for Boyer Moore algorithm
     printf("Running Boyer-Moore algorithm\n");
-    printf("Found at index %d\n", found + 1);
+    printf("Found at index %d\n", found);
     printf("Total comparisons: %d\n", comparison);
     printf("Start time: %d\nEnd time: %d\n", start.tv_usec, end.tv_usec);
     printf("Total time elapsed: %d microseconds\n", end.tv_usec - start.tv_usec);
 }
 
 /** functions */
-char *read_from_file(char *filename) {
-    return NULL;
+char *read_from_file(char *filename)
+{
+   FILE *fptr;
+   char ch;
+   char read[2048];
+   int counter = 0;
+
+   fptr = fopen(filename, "r");
+
+   while (1)
+   {
+      ch = fgetc(fptr);
+      if (ch == EOF)
+         break;
+      else if (ch == '\n')
+         continue;
+      else
+      {
+         read[counter] = ch;
+         counter++;
+      }
+   }
+   fclose(fptr);
+
+   return read;
 }
+
 // naive search implementation
 int naive_search(char *input, char *pattern)
 {

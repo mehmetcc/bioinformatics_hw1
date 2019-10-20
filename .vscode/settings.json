@@ -5,6 +5,8 @@
         "random": "c",
         "string": "c",
         "filesystem": "c",
-        "iosfwd": "c"
+        "iosfwd": "c",
+        "queue": "c",
+        "stack": "c"
     }
 }

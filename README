@@ -1,0 +1,8 @@
+If you want to test the program with example data, type in make,
+and then run by ./main
+
+If you want to give examples with files, use make, and after that
+type in ./main <TEXT_FILE.fa> <PATTERN_FILE.fa>
+
+There are several bash scripts which are unnecessary for the TA but
+I used them for to manage git and reduce boilerplate
