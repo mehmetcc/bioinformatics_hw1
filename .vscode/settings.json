@@ -2,6 +2,9 @@
     "files.associations": {
         "BMHSRCH.C": "cpp",
         "BMHISRCH.C": "cpp",
-        "random": "c"
+        "random": "c",
+        "string": "c",
+        "filesystem": "c",
+        "iosfwd": "c"
     }
 }
